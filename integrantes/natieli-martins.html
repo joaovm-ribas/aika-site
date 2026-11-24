@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>/* Tema antes de desenhar a página (evita piscar) */try{var t=localStorage.getItem("aika-tema")}catch(e){}document.documentElement.dataset.tema=t||(matchMedia("(prefers-color-scheme: dark)").matches?"escuro":"claro")</script>
+  <title>Natieli Martins · Grupo Aika</title>
+  <meta name="description" content="Natieli Martins, integrante do Grupo de Danças Japonesas Aika, de Ijuí/RS.">
+  <meta property="og:title" content="Natieli Martins · Grupo Aika">
+  <meta property="og:description" content="Natieli Martins, integrante do Grupo de Danças Japonesas Aika, de Ijuí/RS.">
+  <meta property="og:image" content="../img/logo.png">
+  <link rel="icon" href="../img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo__inner">
+      <a class="marca" href="../index.html"><img src="../img/logo.png" alt="">Aika</a>
+      <button class="menu-botao" aria-expanded="false" aria-controls="menu" data-i18n-aria="menu" aria-label="Abrir menu">☰</button>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu">
+          <li><a href="../index.html" data-i18n="nav_home">Início</a></li>
+          <li><a href="../integrantes.html" data-i18n="nav_members" aria-current="page">Integrantes</a></li>
+          <li><a href="../galeria.html" data-i18n="nav_gallery">Galeria</a></li>
+          <li><a href="../index.html#contato" data-i18n="nav_contact">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="idiomas" role="group" aria-label="Idioma / Language">
+        <button data-idioma="pt">PT</button>
+        <button data-idioma="en">EN</button>
+        <button data-idioma="es">ES</button>
+        <button data-idioma="ja" lang="ja">日本語</button>
+      </div>
+      <button class="tema-botao" aria-pressed="false" data-i18n-aria="theme" aria-label="Tema escuro">☾</button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container">
+    <a class="voltar" href="../integrantes.html" data-i18n="back">Voltar aos integrantes</a>
+    <article class="perfil">
+      <span class="perfil__foto"><span class="foto__iniciais" aria-hidden="true">NM</span><img src="../img/membros/natieli-martins/natieli-martins.jpg" alt="" onerror="var e=['jpeg','JPG','JPEG','png','webp'],i=+(this.dataset.i||0);if(i<e.length){this.dataset.i=i+1;this.src=this.src.replace(/[.][^.]+$/,'.'+e[i])}else this.remove()"></span>
+      <div>
+        <h1>Natieli Martins</h1>
+        <p class="perfil__funcao" data-i18n="r_danca_taiko">Dança e taikô</p>
+        <p class="perfil__desde"><span data-i18n="since">Integrante desde</span> 2025</p>
+        <p class="perfil__desde"><span data-i18n="born">Ano de nascimento:</span> 2011</p>
+        <p class="perfil__bio" data-i18n="bio_natieli_martins">No Aika desde 2025, é a 13ª integrante em ordem de chegada e faz parte da terceira geração do grupo. Ficou interessada no grupo depois de ver as apresentações do Aika na Expofest 2025, em outubro; apenas um mês depois, já tinha entrado para o grupo e se apresentado no Festival do Japão RS, em novembro. Com interesse inicial pela dança e uma rápida capacidade de adaptação, aprendeu com facilidade a maior parte do repertório e participa de diversos tipos de dança. Ao longo de 2026, foi se interessando cada vez mais pela parte musical e, com muita dedicação, aproveitou os ensaios do Junko, do qual as irmãs das duas fazem parte, para aprender Kenka Yatai com a Akemi. Com isso, foi escalada para as formações principais dessa música na Expofest 2026 e em outras apresentações. No palco, você a verá nas danças enérgicas, como Kimutaka no Uta e Temai no Sora, e nas animadas, como Tawara, e tocando shime nas apresentações de taikô.</p>
+      </div>
+      <!-- MENSAGEM: quando chegar, apague esta linha e a linha FIM, troque o texto e crie a chave msg_natieli_martins nos 4 idiomas do js/i18n.js.
+      <figure class="mensagem">
+        <figcaption class="mensagem__titulo" data-i18n="msg_h_f">Mensagem da integrante</figcaption>
+        <blockquote data-i18n="msg_natieli_martins">Texto da mensagem aqui.</blockquote>
+      </figure>
+      FIM -->
+    </article>
+
+    <!-- Galeria: coloque as fotos em img/membros/natieli-martins/ com os nomes 1.jpg, 2.jpg, 3.jpg...
+         O site encontra as fotos sozinho (para na primeira que faltar). -->
+    <section class="galeria" data-pasta="../img/membros/natieli-martins/" data-nome="Natieli Martins">
+      <h2 data-i18n="gallery_h">Galeria</h2>
+      <div class="galeria__grade">
+        <p class="galeria__vazia" data-i18n="gallery_empty">Mais fotos em breve.</p>
+      </div>
+    </section>
+
+    <dialog class="visor">
+      <img class="visor__img" alt="">
+      <button class="visor__fechar" data-i18n-aria="close" aria-label="Fechar">×</button>
+      <button class="visor__ant" data-i18n-aria="prev" aria-label="Foto anterior">‹</button>
+      <button class="visor__prox" data-i18n-aria="next" aria-label="Próxima foto">›</button>
+    </dialog>
+  </main>
+
+  <footer class="rodape">
+    <p>Grupo Aika · <span data-i18n="assoc">Associação Regional de Cultura Japonesa Sakura</span> · Ijuí/RS</p>
+  </footer>
+
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

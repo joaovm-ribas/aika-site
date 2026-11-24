@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>/* Tema antes de desenhar a página (evita piscar) */try{var t=localStorage.getItem("aika-tema")}catch(e){}document.documentElement.dataset.tema=t||(matchMedia("(prefers-color-scheme: dark)").matches?"escuro":"claro")</script>
+  <title>Ítalo Marques · Grupo Aika</title>
+  <meta name="description" content="Ítalo Marques, integrante do Grupo de Danças Japonesas Aika, de Ijuí/RS.">
+  <meta property="og:title" content="Ítalo Marques · Grupo Aika">
+  <meta property="og:description" content="Ítalo Marques, integrante do Grupo de Danças Japonesas Aika, de Ijuí/RS.">
+  <meta property="og:image" content="../img/logo.png">
+  <link rel="icon" href="../img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo__inner">
+      <a class="marca" href="../index.html"><img src="../img/logo.png" alt="">Aika</a>
+      <button class="menu-botao" aria-expanded="false" aria-controls="menu" data-i18n-aria="menu" aria-label="Abrir menu">☰</button>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu">
+          <li><a href="../index.html" data-i18n="nav_home">Início</a></li>
+          <li><a href="../integrantes.html" data-i18n="nav_members" aria-current="page">Integrantes</a></li>
+          <li><a href="../galeria.html" data-i18n="nav_gallery">Galeria</a></li>
+          <li><a href="../index.html#contato" data-i18n="nav_contact">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="idiomas" role="group" aria-label="Idioma / Language">
+        <button data-idioma="pt">PT</button>
+        <button data-idioma="en">EN</button>
+        <button data-idioma="es">ES</button>
+        <button data-idioma="ja" lang="ja">日本語</button>
+      </div>
+      <button class="tema-botao" aria-pressed="false" data-i18n-aria="theme" aria-label="Tema escuro">☾</button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container">
+    <a class="voltar" href="../integrantes.html" data-i18n="back">Voltar aos integrantes</a>
+    <article class="perfil">
+      <span class="perfil__foto"><span class="foto__iniciais" aria-hidden="true">ÍM</span><img src="../img/membros/italo-marques/italo-marques.jpg" alt="" onerror="var e=['jpeg','JPG','JPEG','png','webp'],i=+(this.dataset.i||0);if(i<e.length){this.dataset.i=i+1;this.src=this.src.replace(/[.][^.]+$/,'.'+e[i])}else this.remove()"></span>
+      <div>
+        <h1>Ítalo Marques</h1>
+        <p class="perfil__funcao" data-i18n="r_danca_taiko">Dança e taikô</p>
+        <p class="perfil__desde"><span data-i18n="since">Integrante desde</span> 2025</p>
+        <p class="perfil__desde"><span data-i18n="born">Ano de nascimento:</span> 2007</p>
+        <p class="perfil__bio" data-i18n="bio_italo_marques">No Aika desde 2025, é o 12º integrante em ordem de chegada e faz parte da terceira geração do grupo. Sempre se interessou pela cultura pop japonesa e conheceu o grupo por meio da namorada, Manoela Amaral; desde então, tem se envolvido cada vez mais com a cultura, principalmente com a música. Além de dançar e tocar taikô, está se dedicando a aprender o shinobue, com o objetivo de dividir a posição de primeiro flautista com Vitor Antunes. É ele também quem dá vida à cabeça do Kinryu, o nosso dragão dourado, feito artesanalmente por Julieta Hayashi, da ARCJ Sakura. Com uma resistência física que permite longas apresentações e desfiles, conduz o dragão de forma animada, enérgica e interativa com o público dos festivais. Em 2026, foi o protagonista da dança do Baile das Etnias da Expofest ao lado de Manoela, interpretando Hikoboshi numa apresentação que retratava a lenda do Tanabata. No palco, você o verá nas danças de eisa e yosakoi, como Dynamic Ryukyu e Temai no Sora, e no taikô em músicas de acompanhamento, como Tawara. E, claro, se vir o dragão dourado passeando pela sua cidade, é ele quem está controlando a cabeça.</p>
+      </div>
+      <!-- MENSAGEM: quando chegar, apague esta linha e a linha FIM, troque o texto e crie a chave msg_italo_marques nos 4 idiomas do js/i18n.js.
+      <figure class="mensagem">
+        <figcaption class="mensagem__titulo" data-i18n="msg_h_m">Mensagem do integrante</figcaption>
+        <blockquote data-i18n="msg_italo_marques">Texto da mensagem aqui.</blockquote>
+      </figure>
+      FIM -->
+    </article>
+
+    <!-- Galeria: coloque as fotos em img/membros/italo-marques/ com os nomes 1.jpg, 2.jpg, 3.jpg...
+         O site encontra as fotos sozinho (para na primeira que faltar). -->
+    <section class="galeria" data-pasta="../img/membros/italo-marques/" data-nome="Ítalo Marques">
+      <h2 data-i18n="gallery_h">Galeria</h2>
+      <div class="galeria__grade">
+        <p class="galeria__vazia" data-i18n="gallery_empty">Mais fotos em breve.</p>
+      </div>
+    </section>
+
+    <dialog class="visor">
+      <img class="visor__img" alt="">
+      <button class="visor__fechar" data-i18n-aria="close" aria-label="Fechar">×</button>
+      <button class="visor__ant" data-i18n-aria="prev" aria-label="Foto anterior">‹</button>
+      <button class="visor__prox" data-i18n-aria="next" aria-label="Próxima foto">›</button>
+    </dialog>
+  </main>
+
+  <footer class="rodape">
+    <p>Grupo Aika · <span data-i18n="assoc">Associação Regional de Cultura Japonesa Sakura</span> · Ijuí/RS</p>
+  </footer>
+
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

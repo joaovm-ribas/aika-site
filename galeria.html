@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>/* Tema antes de desenhar a página (evita piscar) */try{var t=localStorage.getItem("aika-tema")}catch(e){}document.documentElement.dataset.tema=t||(matchMedia("(prefers-color-scheme: dark)").matches?"escuro":"claro")</script>
+  <title>Galeria · Grupo Aika</title>
+  <meta name="description" content="Fotos do Grupo de Danças Japonesas Aika, de Ijuí/RS: apresentações, ensaios e bastidores.">
+  <meta property="og:title" content="Galeria · Grupo Aika">
+  <meta property="og:description" content="Fotos do Grupo de Danças Japonesas Aika, de Ijuí/RS: apresentações, ensaios e bastidores.">
+  <meta property="og:image" content="img/logo.png">
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo__inner">
+      <a class="marca" href="index.html"><img src="img/logo.png" alt="">Aika</a>
+      <button class="menu-botao" aria-expanded="false" aria-controls="menu" data-i18n-aria="menu" aria-label="Abrir menu">☰</button>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu">
+          <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+          <li><a href="integrantes.html" data-i18n="nav_members">Integrantes</a></li>
+          <li><a href="galeria.html" data-i18n="nav_gallery" aria-current="page">Galeria</a></li>
+          <li><a href="index.html#contato" data-i18n="nav_contact">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="idiomas" role="group" aria-label="Idioma / Language">
+        <button data-idioma="pt">PT</button>
+        <button data-idioma="en">EN</button>
+        <button data-idioma="es">ES</button>
+        <button data-idioma="ja" lang="ja">日本語</button>
+      </div>
+      <button class="tema-botao" aria-pressed="false" data-i18n-aria="theme" aria-label="Tema escuro">☾</button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container">
+    <h1 class="titulo-lateral" data-i18n="nav_gallery">Galeria</h1>
+    <p class="intro" data-i18n="gallery_intro">Momentos do Aika nos palcos, nos ensaios e nos bastidores.</p>
+
+    <!-- Cada álbum é uma <section class="galeria">. As fotos ficam na pasta de data-pasta,
+         numeradas: 1.jpg, 2.jpg, 3.jpg... (sem pular números).
+         Para criar um álbum de evento, copie o bloco abaixo, troque a pasta e o título
+         (ex.: data-pasta="img/galeria/festival-japao-sp-2024/" e <h2>Festival do Japão SP 2024</h2>,
+         sem data-i18n) e crie a pasta com as fotos. O álbum mais novo pode ficar em cima. -->
+    <section class="galeria" data-pasta="img/galeria/geral/" data-nome="Grupo Aika">
+      <h2 data-i18n="album_geral">Fotos do grupo</h2>
+      <div class="galeria__grade">
+        <p class="galeria__vazia" data-i18n="gallery_empty">Mais fotos em breve.</p>
+      </div>
+    </section>
+
+    <dialog class="visor">
+      <img class="visor__img" alt="">
+      <button class="visor__fechar" data-i18n-aria="close" aria-label="Fechar">×</button>
+      <button class="visor__ant" data-i18n-aria="prev" aria-label="Foto anterior">‹</button>
+      <button class="visor__prox" data-i18n-aria="next" aria-label="Próxima foto">›</button>
+    </dialog>
+  </main>
+
+  <footer class="rodape">
+    <p>Grupo Aika · <span data-i18n="assoc">Associação Regional de Cultura Japonesa Sakura</span> · Ijuí/RS</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="360" viewBox="0 0 360 360">
+  <!-- Papel de parede: flores de sakura em cinza bem suave. Repete em mosaico. -->
+  <defs>
+    <path id="p" d="M0 0C-7-6-9-17-4-25L0-21L4-25C9-17 7-6 0 0Z"/>
+    <g id="flor">
+      <use xlink:href="#p"/>
+      <use xlink:href="#p" transform="rotate(72)"/>
+      <use xlink:href="#p" transform="rotate(144)"/>
+      <use xlink:href="#p" transform="rotate(216)"/>
+      <use xlink:href="#p" transform="rotate(288)"/>
+    </g>
+    <g id="miolo" fill="#9a9a9a">
+      <circle r="2.2"/>
+      <circle cx="0" cy="-7" r="1.1"/><circle cx="6.6" cy="-2.2" r="1.1"/>
+      <circle cx="4.1" cy="5.7" r="1.1"/><circle cx="-4.1" cy="5.7" r="1.1"/>
+      <circle cx="-6.6" cy="-2.2" r="1.1"/>
+    </g>
+  </defs>
+
+  <!-- galho fino -->
+  <path d="M-10 250C40 225 70 230 110 200S170 150 205 150" fill="none" stroke="#a8a8a8" stroke-width="2" stroke-linecap="round" opacity=".18"/>
+  <path d="M110 200C118 185 128 178 140 176" fill="none" stroke="#a8a8a8" stroke-width="1.5" stroke-linecap="round" opacity=".18"/>
+
+  <g fill="#b4b4b4" opacity=".16">
+    <use xlink:href="#flor" transform="translate(60 70) rotate(12)"/>
+    <use xlink:href="#flor" transform="translate(140 176) rotate(-20) scale(.75)"/>
+    <use xlink:href="#flor" transform="translate(205 150) rotate(30) scale(.9)"/>
+    <use xlink:href="#flor" transform="translate(290 280) rotate(-8) scale(1.1)"/>
+    <use xlink:href="#flor" transform="translate(300 40) rotate(45) scale(.6)"/>
+    <use xlink:href="#flor" transform="translate(40 330) rotate(20) scale(.55)"/>
+  </g>
+  <g opacity=".22">
+    <use xlink:href="#miolo" transform="translate(60 70)"/>
+    <use xlink:href="#miolo" transform="translate(140 176) scale(.75)"/>
+    <use xlink:href="#miolo" transform="translate(205 150) scale(.9)"/>
+    <use xlink:href="#miolo" transform="translate(290 280) scale(1.1)"/>
+  </g>
+
+  <!-- pétalas caindo -->
+  <g fill="#b4b4b4" opacity=".14">
+    <use xlink:href="#p" transform="translate(170 60) rotate(40) scale(.7)"/>
+    <use xlink:href="#p" transform="translate(250 220) rotate(-60) scale(.6)"/>
+    <use xlink:href="#p" transform="translate(110 290) rotate(110) scale(.65)"/>
+    <use xlink:href="#p" transform="translate(330 150) rotate(15) scale(.5)"/>
+    <use xlink:href="#p" transform="translate(20 160) rotate(-30) scale(.55)"/>
+  </g>
+</svg>

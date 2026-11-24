@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>/* Tema antes de desenhar a página (evita piscar) */try{var t=localStorage.getItem("aika-tema")}catch(e){}document.documentElement.dataset.tema=t||(matchMedia("(prefers-color-scheme: dark)").matches?"escuro":"claro")</script>
+  <title>Viviane Crestani · Grupo Aika</title>
+  <meta name="description" content="Viviane Crestani, integrante do Grupo de Danças Japonesas Aika, de Ijuí/RS.">
+  <meta property="og:title" content="Viviane Crestani · Grupo Aika">
+  <meta property="og:description" content="Viviane Crestani, integrante do Grupo de Danças Japonesas Aika, de Ijuí/RS.">
+  <meta property="og:image" content="../img/logo.png">
+  <link rel="icon" href="../img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo__inner">
+      <a class="marca" href="../index.html"><img src="../img/logo.png" alt="">Aika</a>
+      <button class="menu-botao" aria-expanded="false" aria-controls="menu" data-i18n-aria="menu" aria-label="Abrir menu">☰</button>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu">
+          <li><a href="../index.html" data-i18n="nav_home">Início</a></li>
+          <li><a href="../integrantes.html" data-i18n="nav_members" aria-current="page">Integrantes</a></li>
+          <li><a href="../galeria.html" data-i18n="nav_gallery">Galeria</a></li>
+          <li><a href="../index.html#contato" data-i18n="nav_contact">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="idiomas" role="group" aria-label="Idioma / Language">
+        <button data-idioma="pt">PT</button>
+        <button data-idioma="en">EN</button>
+        <button data-idioma="es">ES</button>
+        <button data-idioma="ja" lang="ja">日本語</button>
+      </div>
+      <button class="tema-botao" aria-pressed="false" data-i18n-aria="theme" aria-label="Tema escuro">☾</button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container">
+    <a class="voltar" href="../integrantes.html" data-i18n="back">Voltar aos integrantes</a>
+    <article class="perfil">
+      <span class="perfil__foto"><span class="foto__iniciais" aria-hidden="true">VC</span><img src="../img/membros/viviane-crestani/viviane-crestani.jpg" alt="" onerror="var e=['jpeg','JPG','JPEG','png','webp'],i=+(this.dataset.i||0);if(i<e.length){this.dataset.i=i+1;this.src=this.src.replace(/[.][^.]+$/,'.'+e[i])}else this.remove()"></span>
+      <div>
+        <h1>Viviane Crestani</h1>
+        <p class="perfil__funcao" data-i18n="r_danca_taiko">Dança e taikô</p>
+        <p class="perfil__desde"><span data-i18n="since">Integrante desde</span> 2022</p>
+        <p class="perfil__desde"><span data-i18n="born">Ano de nascimento:</span> 2008</p>
+        <p class="perfil__bio" data-i18n="bio_viviane_crestani">Entrou no Aika em 2022 e, depois de um longo tempo afastada, voltou ao grupo em 2026. Cronologicamente, é a quinta integrante mais antiga ainda ativa e, ao lado de Vitor Antunes, uma das duas que permanecem da segunda geração. Sempre se interessou pela cultura japonesa como um todo: é uma estudante dedicada de japonês e tem o certificado N4 do JLPT, o exame de proficiência na língua japonesa. Seu foco ainda é a dança, mas sempre demonstrou muito interesse pelo taikô e em breve também vai participar das formações de taikô. Na sua primeira passagem pelo grupo, foi uma das integrantes mais destacadas, dentro e fora do palco, e uma das mais marcantes da segunda geração. Com uma personalidade respeitosa e educada com todos, é um símbolo do que o grupo sempre quis representar: não descendentes com profundo respeito pelas tradições japonesas. Agora, em 2026, retorna para continuar contribuindo com a nossa história. No palco, você a verá em vários tipos de dança, como o eisa e os bon odori tradicionais, e também numa interpretação em Libras da música Nadasoso.</p>
+      </div>
+      <figure class="mensagem">
+        <figcaption class="mensagem__titulo" data-i18n="msg_h_f">Mensagem da integrante</figcaption>
+        <blockquote data-i18n="msg_viviane_crestani">Dançar, tocar taikô, falar japonês e estar conectada ao Japão: isso me faz sentir viva.
+
+O momento de estar na posição no palco, pronta pra começar a música; o momento de esperar outro grupo se apresentar e saber que somos os próximos; o momento de estar ali dançando e me divertindo.
+
+O taikô me lembra os campos de batalha, onde seu som era usado para intimidar os inimigos. Para mim, não sou eu que toco o taikô, e sim o taikô que toca a minha alma. Cada batida me lembra o peso da história japonesa em relação às guerras e me emociona.
+
+Pra mim, não é apenas uma dança ou uma batida: é a história e a cultura do Japão sendo apresentadas através de passos e sons. Estar conectada a um povo que eu tanto amo, por meio da sua própria cultura, me dá a certeza de que esse é o meu lugar.
+
+Isso me faz sentir viva.</blockquote>
+      </figure>
+    </article>
+
+    <!-- Galeria: coloque as fotos em img/membros/viviane-crestani/ com os nomes 1.jpg, 2.jpg, 3.jpg...
+         O site encontra as fotos sozinho (para na primeira que faltar). -->
+    <section class="galeria" data-pasta="../img/membros/viviane-crestani/" data-nome="Viviane Crestani">
+      <h2 data-i18n="gallery_h">Galeria</h2>
+      <div class="galeria__grade">
+        <p class="galeria__vazia" data-i18n="gallery_empty">Mais fotos em breve.</p>
+      </div>
+    </section>
+
+    <dialog class="visor">
+      <img class="visor__img" alt="">
+      <button class="visor__fechar" data-i18n-aria="close" aria-label="Fechar">×</button>
+      <button class="visor__ant" data-i18n-aria="prev" aria-label="Foto anterior">‹</button>
+      <button class="visor__prox" data-i18n-aria="next" aria-label="Próxima foto">›</button>
+    </dialog>
+  </main>
+
+  <footer class="rodape">
+    <p>Grupo Aika · <span data-i18n="assoc">Associação Regional de Cultura Japonesa Sakura</span> · Ijuí/RS</p>
+  </footer>
+
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

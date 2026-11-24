@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>/* Tema antes de desenhar a página (evita piscar) */try{var t=localStorage.getItem("aika-tema")}catch(e){}document.documentElement.dataset.tema=t||(matchMedia("(prefers-color-scheme: dark)").matches?"escuro":"claro")</script>
+  <title>Julia Vaz · Grupo Aika</title>
+  <meta name="description" content="Julia Vaz, integrante do Grupo de Danças Japonesas Aika, de Ijuí/RS.">
+  <meta property="og:title" content="Julia Vaz · Grupo Aika">
+  <meta property="og:description" content="Julia Vaz, integrante do Grupo de Danças Japonesas Aika, de Ijuí/RS.">
+  <meta property="og:image" content="../img/logo.png">
+  <link rel="icon" href="../img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo__inner">
+      <a class="marca" href="../index.html"><img src="../img/logo.png" alt="">Aika</a>
+      <button class="menu-botao" aria-expanded="false" aria-controls="menu" data-i18n-aria="menu" aria-label="Abrir menu">☰</button>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu">
+          <li><a href="../index.html" data-i18n="nav_home">Início</a></li>
+          <li><a href="../integrantes.html" data-i18n="nav_members" aria-current="page">Integrantes</a></li>
+          <li><a href="../galeria.html" data-i18n="nav_gallery">Galeria</a></li>
+          <li><a href="../index.html#contato" data-i18n="nav_contact">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="idiomas" role="group" aria-label="Idioma / Language">
+        <button data-idioma="pt">PT</button>
+        <button data-idioma="en">EN</button>
+        <button data-idioma="es">ES</button>
+        <button data-idioma="ja" lang="ja">日本語</button>
+      </div>
+      <button class="tema-botao" aria-pressed="false" data-i18n-aria="theme" aria-label="Tema escuro">☾</button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container">
+    <a class="voltar" href="../integrantes.html" data-i18n="back">Voltar aos integrantes</a>
+    <article class="perfil">
+      <span class="perfil__foto"><span class="foto__iniciais" aria-hidden="true">JV</span><img src="../img/membros/julia-vaz/julia-vaz.jpg" alt="" onerror="var e=['jpeg','JPG','JPEG','png','webp'],i=+(this.dataset.i||0);if(i<e.length){this.dataset.i=i+1;this.src=this.src.replace(/[.][^.]+$/,'.'+e[i])}else this.remove()"></span>
+      <div>
+        <h1>Julia Vaz</h1>
+        <p class="perfil__funcao" data-i18n="r_danca">Dança</p>
+        <p class="perfil__desde"><span data-i18n="since">Integrante desde</span> 2025</p>
+        <p class="perfil__bio" data-i18n="bio_julia_vaz">No Aika desde 2025, é a 14ª integrante em ordem de chegada e faz parte da terceira geração do grupo. Já interessada na cultura pop japonesa, apaixonou-se pelas danças ao assistir ao grupo na Expofest 2025, em outubro. Encantada com o quanto a cultura japonesa pode ser profunda, decidiu fazer parte do Aika para aprender mais sobre as danças e os trajes que chamaram sua atenção. Com um perfil mais voltado para as danças enérgicas de eisa e yosakoi, integra as formações desse estilo, como Temai no Sora, além de danças de caráter mais tradicional, mas animadas, como Tawara.</p>
+      </div>
+      <figure class="mensagem">
+        <figcaption class="mensagem__titulo" data-i18n="msg_h_f">Mensagem da integrante</figcaption>
+        <blockquote data-i18n="msg_julia_vaz">No começo, eu não achava que iria participar de um grupo de dança étnica, mas, quando vi os japoneses dançando e tocando na Expo, pensei: ‘Se for pra dançar em um grupo, eu vou nos japoneses!’. O que me interessou não foi ter relação com animes e essas coisas, mas a cultura: o quanto as danças eram diferentes e chamativas, os trajes, a sincronia de cada um. Tudo isso me fez querer estar lá no palco também. Pra mim, o Aika não é só um grupo, é também uma família, um lugar onde eu posso me expressar e dar tudo de mim em cada movimento! Mesmo que às vezes seja cansativo, quando vemos as pessoas nos aplaudindo e dizendo que foi lindo, dá pra ver que todo o esforço valeu a pena!</blockquote>
+      </figure>
+    </article>
+
+    <!-- Galeria: coloque as fotos em img/membros/julia-vaz/ com os nomes 1.jpg, 2.jpg, 3.jpg...
+         O site encontra as fotos sozinho (para na primeira que faltar). -->
+    <section class="galeria" data-pasta="../img/membros/julia-vaz/" data-nome="Julia Vaz">
+      <h2 data-i18n="gallery_h">Galeria</h2>
+      <div class="galeria__grade">
+        <p class="galeria__vazia" data-i18n="gallery_empty">Mais fotos em breve.</p>
+      </div>
+    </section>
+
+    <dialog class="visor">
+      <img class="visor__img" alt="">
+      <button class="visor__fechar" data-i18n-aria="close" aria-label="Fechar">×</button>
+      <button class="visor__ant" data-i18n-aria="prev" aria-label="Foto anterior">‹</button>
+      <button class="visor__prox" data-i18n-aria="next" aria-label="Próxima foto">›</button>
+    </dialog>
+  </main>
+
+  <footer class="rodape">
+    <p>Grupo Aika · <span data-i18n="assoc">Associação Regional de Cultura Japonesa Sakura</span> · Ijuí/RS</p>
+  </footer>
+
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

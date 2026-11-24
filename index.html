@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>/* Tema antes de desenhar a página (evita piscar) */try{var t=localStorage.getItem("aika-tema")}catch(e){}document.documentElement.dataset.tema=t||(matchMedia("(prefers-color-scheme: dark)").matches?"escuro":"claro")</script>
+  <title>Grupo Aika · Danças japonesas e taikô em Ijuí/RS</title>
+  <meta name="description" content="Grupo de danças japonesas e taikô da Associação Regional de Cultura Japonesa Sakura, de Ijuí/RS.">
+  <meta property="og:title" content="Grupo Aika · Danças japonesas e taikô em Ijuí/RS">
+  <meta property="og:description" content="Grupo de danças japonesas e taikô da Associação Regional de Cultura Japonesa Sakura, de Ijuí/RS.">
+  <meta property="og:image" content="img/banner.jpeg">
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo__inner">
+      <a class="marca" href="index.html"><img src="img/logo.png" alt="">Aika</a>
+      <button class="menu-botao" aria-expanded="false" aria-controls="menu" data-i18n-aria="menu" aria-label="Abrir menu">☰</button>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu">
+          <li><a href="index.html" data-i18n="nav_home" aria-current="page">Início</a></li>
+          <li><a href="integrantes.html" data-i18n="nav_members">Integrantes</a></li>
+          <li><a href="galeria.html" data-i18n="nav_gallery">Galeria</a></li>
+          <li><a href="index.html#contato" data-i18n="nav_contact">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="idiomas" role="group" aria-label="Idioma / Language">
+        <button data-idioma="pt">PT</button>
+        <button data-idioma="en">EN</button>
+        <button data-idioma="es">ES</button>
+        <button data-idioma="ja" lang="ja">日本語</button>
+      </div>
+      <button class="tema-botao" aria-pressed="false" data-i18n-aria="theme" aria-label="Tema escuro">☾</button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="banner">
+      <h1 class="oculto">Aika · Grupo de Danças Japonesas</h1>
+      <div class="banner__moldura">
+        <img class="banner__img" src="img/banner.jpeg" width="1600" height="900" fetchpriority="high"
+          alt="Banner do Grupo Aika, Grupo de Danças Japonesas de Ijuí/RS: integrantes dançando e tocando taikô e shinobue, com os logos da ARCJ Sakura, da UETI e da Expofest Ijuí 2026.">
+      </div>
+      <p class="banner__frase" data-i18n="tagline">Danças japonesas e taikô em Ijuí, Rio Grande do Sul.</p>
+    </section>
+
+    <section class="container sobre" id="sobre">
+      <h2 class="titulo-lateral" data-i18n="about_h">O grupo</h2>
+      <div>
+        <p data-i18n="about_p1">O Grupo de Danças Japonesas Aika 愛歌 nasceu em 2018 dentro da Associação Regional de Cultura Japonesa Sakura, que representa a etnia japonesa na União das Etnias de Ijuí (UETI). Reúne jovens e adultos, descendentes ou não, unidos pelo interesse na cultura japonesa. O nome Aika significa “canção do amor”.</p>
+        <p data-i18n="about_p2">A estreia foi no Baile das Etnias de abertura da ExpoIjuí Fenadi, em outubro de 2018, com uma coreografia inspirada na vida dos pescadores japoneses no mar. Desde então o grupo se apresenta todos os anos na Expofest, levou a dança Sakura Sakura ao UETI Celebra o Japão e subiu ao palco do Festival do Japão, em São Paulo, o maior evento de cultura japonesa do país, em 2022 e novamente em 2026, com dança e taikô.</p>
+        <p data-i18n="about_p3">O repertório mistura o tradicional e o contemporâneo: nos festivais, o grupo leva coreografias mais tradicionais; em Ijuí, arrisca adaptações com sotaque brasileiro e danças mais ritmadas, inspiradas em anime. As coreografias contam com a orientação de Luisa Hayashi. A associação mantém ainda o Junko, grupo infantil de danças japonesas.</p>
+      </div>
+      <!-- Foto do grupo todo: coloque o arquivo em img/grupo.jpg (ou .jpeg/.png/.webp).
+           A foto aparece inteira, sem corte. Sem o arquivo, este espaço some sozinho. -->
+      <figure class="sobre__foto">
+        <img src="img/grupo.jpg" alt="Integrantes do Grupo Aika reunidos" loading="lazy"
+             onerror="var e=['jpeg','JPG','JPEG','png','webp'],i=+(this.dataset.i||0);if(i<e.length){this.dataset.i=i+1;this.src=this.src.replace(/[.][^.]+$/,'.'+e[i])}else this.parentNode.remove()">
+      </figure>
+    </section>
+
+    <section class="lema" id="lema">
+      <div class="container lema__inner">
+        <p class="lema__kanji" lang="ja">不適合者のやり方</p>
+        <div>
+          <h2 data-i18n="lema_h">Nosso jeito</h2>
+          <p class="lema__trad"><span lang="ja-Latn">Futekigōsha no Yarikata</span> · <span data-i18n="lema_trad">“O jeito de quem não se encaixa”</span></p>
+          <p data-i18n="lema_p1">Ijuí fica longe das grandes comunidades japonesas do Brasil, e poucos de nós são descendentes. Sem mestres ou escolas tradicionais por perto, aprendemos como dá: assistindo vídeos, observando com atenção nos festivais, conversando com quem sabe mais e ensaiando juntos. Foi assim que chegamos a uma forma de fazer que junta diferentes estilos de dança e de música, e que carrega o nosso sotaque.</p>
+          <p data-i18n="lema_p2">Futekigōsha no Yarikata não é uma recusa da tradição. É só o reconhecimento de que chegamos a ela por outro caminho. Temos orgulho de quem somos, respeito por quem guarda essa cultura há gerações e vontade de seguir aprendendo, do jeito que podemos.</p>
+          <p class="lema__frase" data-i18n="lema_frase">Aprendendo como podemos. Dançando com o que somos.</p>
+        </div>
+        <!-- Banner do lema: img/futekigosha.png (ou .jpg/.jpeg/.webp). Ocupa a metade direita da faixa.
+             Sem o arquivo, este espaço some sozinho. -->
+        <figure class="lema__banner">
+          <img src="img/futekigosha.png" alt="" loading="lazy"
+               onerror="var e=['jpg','jpeg','JPG','JPEG','webp'],i=+(this.dataset.i||0);if(i<e.length){this.dataset.i=i+1;this.src=this.src.replace(/[.][^.]+$/,'.'+e[i])}else this.parentNode.remove()">
+        </figure>
+      </div>
+    </section>
+
+    <section class="faixa">
+      <div class="container modalidades">
+        <div>
+          <h3><span data-i18n="taiko_t">Taikô</span><small lang="ja">太鼓</small></h3>
+          <p data-i18n="taiko_d">Tambores japoneses tocados em conjunto, com força, ritmo e coreografia.</p>
+        </div>
+        <div>
+          <h3><span data-i18n="dance_t">Danças tradicionais</span><small lang="ja">日本舞踊</small></h3>
+          <p data-i18n="dance_d">Bon odori, Sakura Sakura e coreografias autorais que vão do tradicional ao ritmado.</p>
+        </div>
+        <div>
+          <h3><span data-i18n="shows_t">Apresentações</span><small lang="ja">公演</small></h3>
+          <p data-i18n="shows_d">Festivais do Japão no RS, em São Paulo e em Brasília, Expofest em Ijuí e até a Argentina.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="trajetoria">
+      <h2 data-i18n="traj_h">Por onde passamos</h2>
+      <p class="intro" data-i18n="traj_intro">Cada palco foi também uma oportunidade de aprender. Alguns dos lugares que nos receberam:</p>
+      <div class="trajetoria">
+        <div>
+          <h3 data-i18n="traj_fest_t">Festivais do Japão</h3>
+          <p data-i18n="traj_fest_d">Festival do Japão RS (Esteio), Festival do Japão de São Paulo, Festival do Japão de Brasília, Festival do Japão de Nova Petrópolis, Mostra do Japão de Gramado e Kawasuji Fest, em Atibaia/SP.</p>
+        </div>
+        <div>
+          <h3 data-i18n="traj_cult_t">Cultura e folclore</h3>
+          <p data-i18n="traj_cult_d">Fiesta Nacional del Inmigrante (Oberá, Argentina), Theatro São Pedro (Porto Alegre), Festival de Folclore de Campina das Missões, Mostra Mercosul de Dança (Porto Xavier), Procissão das Criaturas (Santa Cruz do Sul), Expofest, Fenadi e Natal das Nações.</p>
+        </div>
+        <div>
+          <h3 data-i18n="traj_com_t">Comunidade</h3>
+          <p data-i18n="traj_com_d">Apresentações beneficentes para a AAPECAN, a AFIMM e a APAE de Jóia, visitas ao Noblesse Residencial Geriátrico e uma apresentação com tradução em Libras no Encontro de Cegos e Surdos do CAIS.</p>
+        </div>
+        <div>
+          <h3 data-i18n="traj_ofic_t">Oficinas e palestras</h3>
+          <p data-i18n="traj_ofic_d">Workshop de taikô na colônia japonesa de Ivoti, oficinas de origami, palestras sobre imigração e gastronomia japonesa na Unijuí e aulas de japonês no projeto Guardiões da Cultura, da UETI.</p>
+        </div>
+      </div>
+      <p class="destaque" data-i18n="traj_jica">Um dos nossos integrantes esteve entre os cinco brasileiros selecionados para uma formação da JICA em Yokohama, no Japão, sobre o ensino da língua japonesa como língua de herança. O que ele aprendeu lá voltou para Ijuí, nas aulas de japonês da comunidade.</p>
+    </section>
+
+    <section class="container mapa" id="mapa">
+      <h2 data-i18n="map_h">Cidades em que já estivemos</h2>
+      <p class="intro" data-i18n="map_intro">De Ijuí para o Rio Grande do Sul, o Brasil e a Argentina. O dragão dourado do Kinryu, sempre atrás do seu tama (a pérola), passa por cada cidade que já nos recebeu e volta para casa.</p>
+      <div class="mapa__corpo">
+        <div class="mapa__quadro">
+          <!-- O mapa e o dragão são desenhados pelo js/mapa.js a partir da lista ao lado. -->
+          <svg class="mapa__svg" role="img" data-i18n-aria="map_aria" aria-label="Mapa das cidades em que o Grupo Aika já se apresentou"></svg>
+        </div>
+        <!-- Para adicionar uma cidade, copie um <li> e troque nome, eventos e coordenadas
+             (data-lat = latitude, data-lon = longitude, com ponto e sinal de menos).
+             data-rotulo="e" ou "w" mostra o nome no mapa, à direita ou à esquerda do ponto. -->
+        <div class="mapa__lista">
+          <div class="mapa__grupo">
+            <h3>Rio Grande do Sul</h3>
+            <ul>
+              <li tabindex="0" data-lon="-53.922" data-lat="-28.3891" data-casa data-rotulo="w"><strong>Ijuí</strong> <em class="mapa__casa" data-i18n="map_home">Nossa casa</em><span class="mapa__eventos">Expofest (antiga Fenadi) e seu Baile de Abertura, todos os anos desde 2018 · Abertura da sede da UETI, 2022</span></li>
+              <li tabindex="0" data-lon="-53.9925" data-lat="-28.5159"><strong>Augusto Pestana</strong><span class="mapa__eventos">Formatura de kung fu, 2025</span></li>
+              <li tabindex="0" data-lon="-54.8405" data-lat="-27.9911"><strong>Campina das Missões</strong><span class="mapa__eventos">1º Festival do Folclore, 2022</span></li>
+              <li tabindex="0" data-lon="-54.0122" data-lat="-28.2508"><strong>Catuípe</strong><span class="mapa__eventos">Formatura de kung fu, 2025</span></li>
+              <li tabindex="0" data-lon="-54.0742" data-lat="-28.382"><strong>Coronel Barros</strong><span class="mapa__eventos">Formaturas de kung fu, 2024 e 2025</span></li>
+              <li tabindex="0" data-lon="-53.6065" data-lat="-28.644"><strong>Cruz Alta</strong><span class="mapa__eventos">2º Anime Players, 2018 · Fenatrigo, 2023</span></li>
+              <li tabindex="0" data-lon="-51.1746" data-lat="-29.8464"><strong>Esteio</strong><span class="mapa__eventos">10º Festival do Japão do RS, 2023</span></li>
+              <li tabindex="0" data-lon="-53.3994" data-lat="-27.3587"><strong>Frederico Westphalen</strong><span class="mapa__eventos">Expofred, 2025</span></li>
+              <li tabindex="0" data-lon="-50.8764" data-lat="-29.3746"><strong>Gramado</strong><span class="mapa__eventos">1ª Mostra Japão de Gramado, 2023</span></li>
+              <li tabindex="0" data-lon="-51.1638" data-lat="-29.6107"><strong>Ivoti</strong><span class="mapa__eventos">Feira na Colônia Japonesa de Ivoti, 2022 e 2023</span></li>
+              <li tabindex="0" data-lon="-54.1208" data-lat="-28.6471"><strong>Jóia</strong><span class="mapa__eventos">Apresentação beneficente para a APAE</span></li>
+              <li tabindex="0" data-lon="-52.8209" data-lat="-28.46"><strong>Não-Me-Toque</strong><span class="mapa__eventos">Animetoque, 2023</span></li>
+              <li tabindex="0" data-lon="-51.1119" data-lat="-29.3766"><strong>Nova Petrópolis</strong><span class="mapa__eventos">Festival do Japão de Nova Petrópolis, 2018 e 2019</span></li>
+              <li tabindex="0" data-lon="-52.4103" data-lat="-28.2623"><strong>Passo Fundo</strong><span class="mapa__eventos">Evento de Líderes BSBIOS, 2023</span></li>
+              <li tabindex="0" data-lon="-51.209" data-lat="-30.0368" data-rotulo="e"><strong>Porto Alegre</strong><span class="mapa__eventos">Festival do Japão RS, 2019 e 2022 · Theatro São Pedro, 2022</span></li>
+              <li tabindex="0" data-lon="-54.9" data-lat="-27.7349"><strong>Porto Vera Cruz</strong><span class="mapa__eventos">II Encontro de Dança Internacional, 2025</span></li>
+              <li tabindex="0" data-lon="-55.1428" data-lat="-27.9067"><strong>Porto Xavier</strong><span class="mapa__eventos">2ª Mostra Mercosul de Danças, 2023</span></li>
+              <li tabindex="0" data-lon="-52.4361" data-lat="-29.7241"><strong>Santa Cruz do Sul</strong><span class="mapa__eventos">Procissão das Criaturas, 2022 e 2023</span></li>
+              <li tabindex="0" data-lon="-54.2658" data-lat="-28.3002"><strong>Santo Ângelo</strong><span class="mapa__eventos">Feira da Praça, 2019</span></li>
+            </ul>
+          </div>
+          <div class="mapa__grupo">
+            <h3>São Paulo</h3>
+            <ul>
+              <li tabindex="0" data-lon="-46.5532" data-lat="-23.1156"><strong>Atibaia</strong><span class="mapa__eventos">XVIII Kawasuji Fest</span></li>
+              <li tabindex="0" data-lon="-46.6396" data-lat="-23.5558" data-rotulo="e"><strong>São Paulo</strong><span class="mapa__eventos">23º Festival do Japão, 2022 · 25º Festival do Japão, 2024</span></li>
+            </ul>
+          </div>
+          <div class="mapa__grupo">
+            <h3>Distrito Federal</h3>
+            <ul>
+              <li tabindex="0" data-lon="-47.8919" data-lat="-15.7975" data-rotulo="e"><strong>Brasília</strong><span class="mapa__eventos">11º e 12º Festival do Japão de Brasília, 2023 e 2024</span></li>
+            </ul>
+          </div>
+          <div class="mapa__grupo">
+            <h3>Misiones · Argentina</h3>
+            <ul>
+              <li tabindex="0" data-lon="-55.1203" data-lat="-27.4868" data-rotulo="w"><strong>Oberá</strong><span class="mapa__eventos">43ª Fiesta Nacional del Inmigrante, 2023</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="videos">
+      <h2 data-i18n="videos_h">Vídeos</h2>
+      <div class="videos">
+        <a class="video" href="https://www.youtube.com/@grupoaika" target="_blank" rel="noopener" data-youtube="">
+          <span class="video__play" aria-hidden="true">▶</span>
+          <span data-i18n="v1">Festival do Japão (SP)</span>
+        </a>
+        <a class="video" href="https://www.youtube.com/@grupoaika" target="_blank" rel="noopener" data-youtube="">
+          <span class="video__play" aria-hidden="true">▶</span>
+          <span data-i18n="v3">Expofest Ijuí</span>
+        </a>
+        <a class="video" href="https://www.youtube.com/@grupoaika" target="_blank" rel="noopener" data-youtube="">
+          <span class="video__play" aria-hidden="true">▶</span>
+          <span>Sakura Sakura</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="container" id="galeria">
+      <h2 data-i18n="gallery_h">Galeria</h2>
+      <!-- Mostra as primeiras fotos de img/galeria/geral/ (data-limite). -->
+      <div class="galeria" data-pasta="img/galeria/geral/" data-nome="Grupo Aika" data-limite="8">
+        <div class="galeria__grade">
+          <p class="galeria__vazia" data-i18n="gallery_empty">Mais fotos em breve.</p>
+        </div>
+      </div>
+      <a class="ver-todos" href="galeria.html" data-i18n="see_gallery">Ver a galeria completa</a>
+    <dialog class="visor">
+      <img class="visor__img" alt="">
+      <button class="visor__fechar" data-i18n-aria="close" aria-label="Fechar">×</button>
+      <button class="visor__ant" data-i18n-aria="prev" aria-label="Foto anterior">‹</button>
+      <button class="visor__prox" data-i18n-aria="next" aria-label="Próxima foto">›</button>
+    </dialog>
+    </section>
+
+    <section class="container" id="integrantes">
+      <h2 data-i18n="members_h">Integrantes</h2>
+      <p class="intro" data-i18n="members_home">Dezesseis pessoas que dançam, tocam taikô e seguem aprendendo juntas.</p>
+      <ul class="nomes">
+        <li><a href="integrantes/akemi-oba.html">Akemi Oba</a></li>
+        <li><a href="integrantes/daniel-kusiak.html">Daniel Maki Kusiak</a></li>
+        <li><a href="integrantes/gabriel-steurer.html">Gabriel Steurer</a></li>
+        <li><a href="integrantes/italo-marques.html">Ítalo Marques</a></li>
+        <li><a href="integrantes/joao-vitor-ribas.html">João Vitor Ribas</a></li>
+        <li><a href="integrantes/julia-vaz.html">Julia Vaz</a></li>
+        <li><a href="integrantes/luisa-hayashi.html">Luisa Hayashi</a></li>
+        <li><a href="integrantes/luiza-kusiak.html">Luiza Maki Kusiak</a></li>
+        <li><a href="integrantes/manoela-amaral.html">Manoela Amaral</a></li>
+        <li><a href="integrantes/manuella-santos.html">Manuella Santos</a></li>
+        <li><a href="integrantes/mariana-feistel.html">Mariana Feistel</a></li>
+        <li><a href="integrantes/natieli-martins.html">Natieli Martins</a></li>
+        <li><a href="integrantes/taisa-baldissera.html">Taísa Baldissera</a></li>
+        <li><a href="integrantes/vitor-antunes.html">Vitor Antunes</a></li>
+        <li><a href="integrantes/viviane-crestani.html">Viviane Crestani</a></li>
+        <li><a href="integrantes/yasmin-riquinho.html">Yasmin Riquinho</a></li>
+      </ul>
+      <a class="ver-todos" href="integrantes.html" data-i18n="see_all">Ver todos os integrantes</a>
+    </section>
+  </main>
+
+  <section class="contato" id="contato">
+    <div class="container">
+      <h2 data-i18n="contact_h">Fale com o Aika</h2>
+      <p data-i18n="contact_p">Convites para apresentações, oficinas ou para fazer parte do grupo.</p>
+      <div class="botoes">
+        <a href="mailto:arcjsakura@gmail.com">E-mail</a>
+        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/grupo.aika/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@grupoaika" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <p>Grupo Aika · <span data-i18n="assoc">Associação Regional de Cultura Japonesa Sakura</span> · Ijuí/RS</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/mapa.js"></script>
+</body>
+</html>
